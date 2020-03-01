@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+    <link rel="shortcut icon" href="bomb.png" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>   
+    <body>
+        <h1>Minesweeper</h1>
+    
+            <label for="rows">Rows:</label><br><br>
+            <input type="number" id="inputrow" name="inputrow" value=10><br><br>
+    
+        <br>
+            <label for="cols">Columns:</label><br><br>
+            <input type="number" id="inputcols" name="inputcols" value=10 ><br><br>
+        <br>
+            <label for="mines">Mines:</label><br><br>
+            <input type="number" id="inputmines" name="inputmines" value=10 ><br><br>
+        <br>
+        <!-- Clicking this button calls doAjax(), which will do an AJAX request -->
+        <button type="button" onclick="doAjax()">Generate Board</button><br><br>
+    
+        <div id="board"></div>
+    
+        <script src="minesweeper.js"></script>
+    </body>
+
+</body>
+</html>
